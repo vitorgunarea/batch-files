@@ -1,6 +1,6 @@
 @echo on
 
-net use w: \\PC\Users /user:Usuario-PC Arenque1-
+net use w: \\PC\Users /user:User-PC UserPassword
 
 shutdown -m \\PC -s -t 00 -f
 
