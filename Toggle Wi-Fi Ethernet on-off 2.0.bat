@@ -2,7 +2,7 @@
 
 netsh interface show interface Ethernet |find "Enabled" >nul && (
   netsh interface set interface "Ethernet" disabled
-  netsh interface set interface "Wi-fi 2" enabled
+  netsh interface set interface "Wi-fi" enabled
 
 
 echo.
@@ -23,7 +23,7 @@ timeout /t 4 > nul
 
 netsh interface show interface Ethernet |find "Disabled" >nul && (
   netsh interface set interface "Ethernet" enabled
-  netsh interface set interface "Wi-fi 2" disabled
+  netsh interface set interface "Wi-fi" disabled
 
 echo.
 echo   Disabling Wi-fi
